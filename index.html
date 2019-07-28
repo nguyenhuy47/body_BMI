@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh chi so can nang co the</title>
+</head>
+<body>
+ <script>
+     var a = parseFloat(prompt("your's weight:"));
+     var b = parseFloat(prompt("your's weight:"));
+     let result = "";
+     let BMI = a/(b*b);
+     if(BMI < 18){
+         result = "UnderWeight"
+     }
+     else if(BMI < 25){
+         result = "Nomal"
+     }
+     else if(BMI < 30) {
+         result = "overWeight";
+     }
+     else {
+         result = "obese"
+     }
+     document.write(result);
+ </script>
+</body>
+</html>
